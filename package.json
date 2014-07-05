@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Codius smart oracle command-line interface (CLI) for Node.js",
   "main": "app.js",
+  "bin": "./bin/codius-cli.js",
   "scripts": {
     "test": "./node_modules/.bin/istanbul test --preload-sources ./node_modules/.bin/_mocha -- --reporter spec test/*.js"
   },
@@ -34,5 +35,8 @@
     "chai": "~1.9.1",
     "sinon-chai": "~2.5.0",
     "istanbul": "~0.2.16"
+  },
+  "dependencies": {
+    "q": "~1.0.1"
   }
 }
