@@ -1,0 +1,38 @@
+{
+  "name": "codius",
+  "version": "1.0.0",
+  "description": "Codius smart oracle command-line interface (CLI) for Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul test --preload-sources ./node_modules/.bin/_mocha -- --reporter spec test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codius/cli.git"
+  },
+  "keywords": [
+    "codius",
+    "javascript",
+    "smart",
+    "oracle",
+    "contracts",
+    "distributed",
+    "autonomous",
+    "trustless",
+    "cloud",
+    "virtual"
+  ],
+  "author": "Stefan Thomas <justmoon@members.fsf.org>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codius/cli/issues"
+  },
+  "homepage": "https://github.com/codius/cli",
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "sinon": "~1.10.2",
+    "chai": "~1.9.1",
+    "sinon-chai": "~2.5.0",
+    "istanbul": "~0.2.16"
+  }
+}
