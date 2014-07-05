@@ -10,4 +10,8 @@ parser.parseArgv(process.argv);
 
 var codius = new Codius();
 codius.load(parser.getConfig()).then(function () {
+  codius.runCommand(codius.config.command);
+}).catch(function (err) {
+  console.error(err.message);
+  process.exit(1);
 }).done();
