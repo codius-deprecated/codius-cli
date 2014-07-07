@@ -39,6 +39,7 @@
   "dependencies": {
     "q": "~1.0.1",
     "nopt": "~3.0.1",
-    "codius-engine": "https://github.com/codius/engine/tarball/master"
+    "codius-engine": "https://github.com/codius/engine/tarball/master",
+    "npm": "~1.4.20"
   }
 }
