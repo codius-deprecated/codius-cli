@@ -39,7 +39,7 @@
   "dependencies": {
     "q": "~1.0.1",
     "nopt": "~3.0.1",
-    "codius-engine": "git://github.com/codius/engine.git#master",
+    "codius-engine": "git+ssh://git@github.com/codius/engine.git#master",
     "npm": "~1.4.20"
   }
 }
