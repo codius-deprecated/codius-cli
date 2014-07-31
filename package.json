@@ -37,9 +37,10 @@
     "istanbul": "~0.2.16"
   },
   "dependencies": {
-    "q": "~1.0.1",
-    "nopt": "~3.0.1",
     "codius-engine": "git+ssh://git@github.com/codius/engine.git#master",
-    "npm": "~1.4.20"
+    "nconf": "^0.6.9",
+    "nopt": "~3.0.1",
+    "npm": "~1.4.20",
+    "q": "~1.0.1"
   }
 }
