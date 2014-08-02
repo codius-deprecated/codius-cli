@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "codius-engine": "git+ssh://git@github.com/codius/engine.git#master",
+    "concat-stream": "^1.4.6",
     "nconf": "^0.6.9",
     "nopt": "~3.0.1",
     "npm": "~1.4.20",
