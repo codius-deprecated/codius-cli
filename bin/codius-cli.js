@@ -15,6 +15,6 @@ var codius = new Codius();
 codius.load(config).then(function () {
   codius.runCommand(command);
 }).catch(function (err) {
-  console.error(err.message);
+  console.error(err.stack ? err.stack : err);
   process.exit(1);
 }).done();
