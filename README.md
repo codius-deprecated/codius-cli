@@ -1,0 +1,60 @@
+# Codius Command-Line Interface (CLI)
+
+## Installation
+
+``` sh
+sudo npm install -g codius
+```
+
+## Getting started
+
+### Hello world
+
+Let's check out a contract and run it!
+
+``` sh
+git clone git@github.com:codius/example-helloworld.git codius-example-helloworld
+cd codius-example-helloworld
+codius run
+```
+
+You should see something like:
+
+![](http://i.imgur.com/rXaQMFU.png)
+
+
+### Contracts are servers
+
+Contracts can expose HTTP APIs, check it out:
+
+``` sh
+git clone https://github.com/codius/example-webserver.git codius-example-webserver
+cd codius-example-webserver
+codius serve
+```
+
+Your contract is now running at `localhost:2634`. Go ahead and open it in a browser!
+
+### Uploading contracts
+
+**Warning, this functionality is still heavily under development.**
+
+You can upload contracts to Codius hosts. First, let's set up a local Codius host:
+
+``` sh
+git clone git@github.com:codius/codius-host.git
+cd codius-host
+npm install
+node app
+```
+
+Now you can go back to the `codius-example-webserver` folder from the previous example.
+
+To upload your contract, run `codius upload`.
+
+``` sh
+cd codius-example-webserver
+codius upload
+```
+
+Now your contract is running on the Codius host! Go ahead and open its URL in the browser and watch its output in the host's log!
