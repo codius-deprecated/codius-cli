@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/codius/cli.git"
+    "url": "git://github.com/codius/codius-cli.git"
   },
   "keywords": [
     "codius",
@@ -26,9 +26,9 @@
   "author": "Stefan Thomas <justmoon@members.fsf.org>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/codius/cli/issues"
+    "url": "https://github.com/codius/codius-cli/issues"
   },
-  "homepage": "https://github.com/codius/cli",
+  "homepage": "https://github.com/codius/codius-cli",
   "devDependencies": {
     "mocha": "~1.21.4",
     "sinon": "~1.10.2",
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "bluebird": "^2.3.5",
-    "codius-engine": "^0.1.0",
+    "codius-engine": "codius/codius-engine#master",
     "concat-stream": "^1.4.6",
     "express": "^4.9.5",
     "nconf": "^0.6.9",
