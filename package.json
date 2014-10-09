@@ -37,7 +37,8 @@
     "istanbul": "~0.3.2"
   },
   "dependencies": {
-    "codius-engine": "^0.0.1",
+    "bluebird": "^2.3.5",
+    "codius-engine": "^0.1.0",
     "concat-stream": "^1.4.6",
     "express": "^4.9.5",
     "nconf": "^0.6.9",
