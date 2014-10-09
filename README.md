@@ -2,6 +2,14 @@
 
 ## Installation
 
+On 64-bit systems you need to have 32-bit libc and libstdc++ installed. On Ubuntu, run:
+
+``` sh
+sudo apt-get install libc6-i386 lib32stdc++6
+```
+
+To install Codius command line tools, run:
+
 ``` sh
 sudo npm install -g codius
 ```
