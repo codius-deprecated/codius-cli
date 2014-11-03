@@ -41,6 +41,7 @@
     "codius-engine": "codius/codius-engine#master",
     "concat-stream": "^1.4.6",
     "express": "^4.9.5",
+    "extend": "^2.0.0",
     "nconf": "^0.6.9",
     "nopt": "~3.0.1",
     "npm": "^2.1.3",
