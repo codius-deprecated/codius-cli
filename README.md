@@ -5,7 +5,7 @@
 On 64-bit systems you need to have 32-bit libc, libstdc++ and libseccomp installed. On Ubuntu, run:
 
 ``` sh
-dpkg --add-architecture i386
+sudo dpkg --add-architecture i386
 sudo apt-get install libc6-i386 lib32stdc++6 libseccomp2:i386
 ```
 
