@@ -22,7 +22,7 @@ sudo npm install -g codius
 Let's check out a contract and run it!
 
 ``` sh
-git clone git@github.com:codius/example-helloworld.git codius-example-helloworld
+git clone https://github.com/codius/example-helloworld codius-example-helloworld
 cd codius-example-helloworld
 codius run
 ```
@@ -37,7 +37,7 @@ You should see something like:
 Contracts can expose HTTP APIs, check it out:
 
 ``` sh
-git clone https://github.com/codius/example-webserver.git codius-example-webserver
+git clone https://github.com/codius/example-webserver codius-example-webserver
 cd codius-example-webserver
 codius serve
 ```
@@ -51,7 +51,7 @@ Your contract is now running at `localhost:2634`. Go ahead and open it in a brow
 You can upload contracts to Codius hosts. First, let's set up a local Codius host:
 
 ``` sh
-git clone git@github.com:codius/codius-host.git
+git clone https://github.com/codius/codius-host
 cd codius-host
 npm install
 node app
