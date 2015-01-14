@@ -1,6 +1,6 @@
 {
   "name": "codius",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Codius smart oracle command-line interface (CLI) for Node.js",
   "main": "app.js",
   "bin": "./bin/codius-cli.js",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "mocha": "~1.21.4",
     "sinon": "~1.10.2",
-    "chai": "~1.9.1",
+    "chai": "~1.9.2",
     "sinon-chai": "~2.6.0",
     "istanbul": "~0.3.2"
   },
