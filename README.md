@@ -71,7 +71,7 @@ Now your contract is running on the Codius host! Go ahead and open its URL in th
 **Using Self-Signed SSL Certificates**
 
 If your Codius Host is using a self-signed SSL certificate (potentially for development) you will need to
-enable tls connections with self-signed certs by setting the `CODIUS_UNAUTHORIZED_SSL` enviroment variable to true
+enable tls connections with self-signed certs by setting the `CODIUS_UNAUTHORIZED_SSL` environment variable to true
 
 ``` sh
 CODIUS_UNAUTHORIZED_SSL=true codius upload
