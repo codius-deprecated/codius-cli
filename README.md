@@ -1,18 +1,70 @@
 # Codius Command-Line Interface (CLI)
 
-## Installation
+## Prerequisites
 
-On 64-bit systems you need to have 32-bit libc, libstdc++ and libseccomp installed. On Ubuntu, run:
+To use the Codius command-line interface (CLI), you need a recent version of Linux.
+
+### Linux
+
+For the example commands below, we assume you're on Ubuntu 14.04 or later. But most up-to-date Linux distributions should work. We definitely recommend being on the latest stable release though.
+
+If you're on Windows/Mac try installing [Vagrant](https://docs.vagrantup.com/v2/installation/index.html) and then run:
+
+```sh
+vagrant init ubuntu/trusty32
+vagrant up
+vagrant ssh
+```
+
+Congratulations, you are running Ubuntu/Linux! Proceed.
+
+### 32-bit libc/libstdc++ (Skip if you're using Vagrant or a 32-bit installation)
+
+On 64-bit systems you need to have the 32-bit versions of libc, libstdc++ and libseccomp installed.
+
+On Ubuntu, run:
 
 ``` sh
 sudo dpkg --add-architecture i386
+sudo apt-get update
 sudo apt-get install libc6-i386 lib32stdc++6 libseccomp2:i386
 ```
+
+### git
+
+Install git by running:
+
+``` sh
+sudo apt-get install git
+```
+
+### Node.js
+
+Next, you need a recent version of Node.js. All versions of 0.10.x or higher should work.
+
+On Ubuntu, you can install Node.js simply by:
+
+```sh
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+sudo ln -s /usr/bin/nodejs /usr/local/bin/node
+```
+
+## Installation
 
 To install Codius command line tools, run:
 
 ``` sh
 sudo npm install -g codius
+```
+
+## Verification
+
+Now let's verify everything installed ok.
+
+``` sh
+codius selftest
 ```
 
 ## Getting started
