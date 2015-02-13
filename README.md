@@ -115,7 +115,7 @@ To upload your contract, run `codius upload`.
 
 ``` sh
 cd codius-example-webserver
-codius upload
+CODIUS_HOST=https://codius-host-name.com:2633 codius upload
 ```
 
 Now your contract is running on the Codius host! Go ahead and open its URL in the browser and watch its output in the host's log!
@@ -126,5 +126,5 @@ If your Codius Host is using a self-signed SSL certificate (potentially for deve
 enable tls connections with self-signed certs by setting the `CODIUS_UNAUTHORIZED_SSL` environment variable to true
 
 ``` sh
-CODIUS_UNAUTHORIZED_SSL=true codius upload
+CODIUS_UNAUTHORIZED_SSL=true CODIUS_HOST=https://codius-host-name.com:2633 codius upload
 ```
