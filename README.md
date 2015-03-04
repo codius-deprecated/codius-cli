@@ -111,11 +111,11 @@ node app
 
 Now you can go back to the `codius-example-webserver` folder from the previous example.
 
-To upload your contract, run `codius upload`.
+To upload your contract to one or more local or remote Codius hosts, run `codius upload`. Specify the hosts using `--hosts`. Multiple hosts can be listed using commas without spaces.
 
 ``` sh
 cd codius-example-webserver
-CODIUS_HOST=https://codius-host-name.com:2633 codius upload
+codius upload --hosts https://codius-host-1.com,https://codius-host-2.com:2633
 ```
 
 Now your contract is running on the Codius host! Go ahead and open its URL in the browser and watch its output in the host's log!
@@ -126,5 +126,5 @@ If your Codius Host is using a self-signed SSL certificate (potentially for deve
 enable tls connections with self-signed certs by setting the `CODIUS_UNAUTHORIZED_SSL` environment variable to true
 
 ``` sh
-CODIUS_UNAUTHORIZED_SSL=true CODIUS_HOST=https://codius-host-name.com:2633 codius upload
+CODIUS_UNAUTHORIZED_SSL=true codius upload --hosts https://codius-host-name.com
 ```
