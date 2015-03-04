@@ -1,7 +1,7 @@
 {
   "name": "codius",
   "version": "1.0.6",
-  "description": "Codius smart oracle command-line interface (CLI) for Node.js",
+  "description": "Codius command-line interface (CLI) for Node.js",
   "main": "app.js",
   "bin": "./bin/codius-cli.js",
   "scripts": {

@@ -71,7 +71,7 @@ codius selftest
 
 ### Hello world
 
-Let's check out a contract and run it!
+Let's check out an application and run it!
 
 ``` sh
 git clone https://github.com/codius/example-helloworld codius-example-helloworld
@@ -84,9 +84,9 @@ You should see something like:
 ![](http://i.imgur.com/rXaQMFU.png)
 
 
-### Contracts are servers
+### Applications as servers
 
-Contracts can expose HTTP APIs, check it out:
+Codius applications can expose HTTP APIs, check it out:
 
 ``` sh
 git clone https://github.com/codius/example-webserver codius-example-webserver
@@ -94,13 +94,13 @@ cd codius-example-webserver
 codius serve
 ```
 
-Your contract is now running at `localhost:2634`. Go ahead and open it in a browser!
+You should see an message like `Localhost server listening on port: 8000` meaning your application is now running at `localhost:8000`. Go ahead and open it in a browser!
 
-### Uploading contracts
+### Uploading applications
 
-**Warning, this functionality is still heavily under development.**
+#### Localhost
 
-You can upload contracts to Codius hosts. First, let's set up a local Codius host:
+You can upload applications to Codius hosts. First, let's set up a local Codius host:
 
 ``` sh
 git clone https://github.com/codius/codius-host
@@ -109,22 +109,28 @@ npm install
 node app
 ```
 
-Now you can go back to the `codius-example-webserver` folder from the previous example.
-
-To upload your contract to one or more local or remote Codius hosts, run `codius upload`. Specify the hosts using `--hosts`. Multiple hosts can be listed using commas without spaces.
+Now you can go back to the `codius-example-webserver` folder from the previous example and run `codius upload`:
 
 ``` sh
 cd codius-example-webserver
-codius upload --hosts https://codius-host-1.com,https://codius-host-2.com:2633
+codius upload --hosts https://localhost:2633
 ```
 
-Now your contract is running on the Codius host! Go ahead and open its URL in the browser and watch its output in the host's log!
+Now your application is running on the Codius host! Go ahead and open its URL in the browser and watch its output in the host's log!
 
-**Using Self-Signed SSL Certificates**
+#### Remote hosts
 
-If your Codius Host is using a self-signed SSL certificate (potentially for development) you will need to
+To upload your application to one or more remote Codius hosts, specify the hosts using `--hosts`. Multiple hosts can be listed using commas without spaces:
+
+``` sh
+codius upload --hosts https://remote-host-1.com,https://remote-host-2.com
+```
+
+#### Using Self-Signed SSL Certificates
+
+If your Codius host is using a self-signed SSL certificate (potentially for development) you will need to
 enable tls connections with self-signed certs by setting the `CODIUS_UNAUTHORIZED_SSL` environment variable to true
 
 ``` sh
-CODIUS_UNAUTHORIZED_SSL=true codius upload --hosts https://codius-host-name.com
+CODIUS_UNAUTHORIZED_SSL=true codius upload --hosts https://self-signed-host.com
 ```
