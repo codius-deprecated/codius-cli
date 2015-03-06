@@ -98,15 +98,22 @@ You should see an message like `Localhost server listening on port: 8000` meanin
 
 ### Uploading applications
 
-#### Localhost
+You can upload contracts to Codius hosts. 
 
-You can upload applications to Codius hosts. First, let's set up a local Codius host:
+NOTE: Before attempting to upload an application, it is important to first test it with Node and then with Codius using:
 
 ``` sh
-git clone https://github.com/codius/codius-host
-cd codius-host
-npm install
-node app
+codius run
+```
+
+If your application runs with issues, you are ready to upload!
+
+#### Localhost
+
+First, set yourself up with a local [Codius host](https://www.npmjs.com/package/codius-host) and run:
+
+``` sh
+codius-host start
 ```
 
 Now you can go back to the `codius-example-webserver` folder from the previous example and run `codius upload`:
