@@ -1,6 +1,6 @@
 {
   "name": "codius",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Codius command-line interface (CLI) for Node.js",
   "main": "app.js",
   "bin": "./bin/codius-cli.js",
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "bluebird": "^2.3.5",
-    "codius-engine": "^1.2.0",
+    "codius-engine": "^1.2.1",
     "concat-stream": "^1.4.6",
     "express": "^4.9.5",
     "extend": "^2.0.0",
